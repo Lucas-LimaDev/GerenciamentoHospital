@@ -5,13 +5,14 @@ public class SistemaHospitalar {
        Pacientes paciente = new Pacientes(27,"Lucas","12345678900","20/05/2035",1);
        ResponsavelTecnico rt = new ResponsavelTecnico("Dr. Nilva","0000555876",35,"Cirugia","rt123");
 
+
+
        Consulta consulta = new Consulta(paciente,medico,rt);
 
        consulta.aprovarProcedimento();
        Agendamentos.agendarProcedimento(medico, consulta,"med123");
        consulta.finalizar();
 
-       System.out.println(medico.getNome());
 
     }
 }
